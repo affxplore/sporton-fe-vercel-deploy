@@ -31,6 +31,10 @@ const CartItems = ({ handlePayment }: TCartItems) => {
               className="border-b border-gray-200 p-4 flex gap-3"
               key={item._id}
             >
+              
+            console.log("ITEM IMAGE RAW:", item.imageUrl);
+            console.log("ITEM IMAGE FULL:", getImageUrl(item.imageUrl));
+
               <div className="bg-primary-light aspect-square w-16 flex justify-center items-center">
                 <Image
                   src={getImageUrl(item.imageUrl)}
